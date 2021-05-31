@@ -1,0 +1,23 @@
+// COLORS
+// @inlcude cl(black);
+//--------------------------------------------------
+
+$colors: (
+  white: #fff,
+  black: #000,
+	purple: #64629D,
+	pale-purple: #EDECFC,
+	purple3: #9F9EC1,
+	gray: #F9F9F9,
+	try-black: #2D2D32,
+);
+
+@function cl($key) {
+	@return map-get($colors, $key);
+}
+
+@mixin responsive {
+	@media print,screen and (max-width: 768px) {
+		@content;
+	}
+}

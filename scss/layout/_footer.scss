@@ -1,0 +1,53 @@
+.footer {
+  background-color: cl(black);
+  padding: 2.7rem 0;
+  .footer-contents {
+    display: flex;
+    justify-content: space-between;
+    .footer-left {
+      .footer-logo {
+        font-size: 2.4rem;
+        color: cl(white);
+        margin-bottom: 1rem;
+      }
+      .nav-list {
+        display: flex;
+        margin-bottom: 1rem;
+        .nav-item {
+          font-size: 1.4rem;
+          margin-right: 1.5rem;
+          a {
+            color: cl(white);
+          }
+        }
+      }
+      small {
+        color: cl(white);
+        span {
+          color: cl(white);
+          padding-left: 1rem;
+        }
+      }
+    }
+
+    .footer-right {
+      .sns-text {
+        color: cl(white);
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+      .sns-list {
+        display: flex;
+        .sns-item {
+          margin-right: 1.5rem;
+          a {
+            i {
+              color: cl(white);
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

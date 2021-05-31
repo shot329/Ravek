@@ -1,0 +1,14 @@
+.whatis {
+  background-color: cl(white);
+  text-align: center;
+  .whatis-contents {
+    .whatis-explanation {
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-bottom: 3.5rem;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}

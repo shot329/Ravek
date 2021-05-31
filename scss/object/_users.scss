@@ -1,0 +1,19 @@
+.users {
+  .users-contents {
+    .users-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .users-item {
+        width: 25%;
+        text-align: center;
+        img {
+          width: 21rem;
+        }
+        &:nth-child(n+5) {
+          margin-top: 5rem;
+        }
+      }
+    }
+  }
+}

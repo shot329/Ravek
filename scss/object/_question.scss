@@ -1,0 +1,37 @@
+.question {
+  background-color: cl(gray);
+  .question-contents {
+    .question-list {
+      .question-item {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        .faq {
+          background-color: cl(purple);
+          color: cl(white);
+          padding: 2.2rem 0 2.2rem 3rem;
+          border-radius: 1rem;
+          margin-bottom: 1rem;
+          span {
+            color: cl(white);
+            padding-right: 0.8rem;
+            font-size: 2.2rem;
+          }
+        }
+        .answer {
+          background-color: cl(white);
+          line-height: 3.2rem;
+          padding: 2.2rem 2.2rem 2.2rem 3rem;
+          border-radius: 1rem;
+          display: flex;
+          span {
+            &:first-child {
+              margin-right: 1.5rem;
+              font-size: 2.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.header {
+  background-color: cl(white);
+  display: flex;
+  justify-content: space-between;
+  height: 7.2rem;
+  line-height: 7.2rem;
+  .header-logo {
+    font-size: 2.8rem;
+    color: cl(purple);
+    font-weight: 900;
+  }
+  .header-nav {
+    .nav-list {
+      display: flex;
+      .nav-item {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-left: 1.6rem;
+      }
+      .nav-free-btn {
+        a {
+          background-color: cl(purple);
+          color: cl(white);
+          padding: 1.2rem 2.6rem;
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
+}

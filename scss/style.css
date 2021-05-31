@@ -1,0 +1,512 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Hiragino Mincho Pro',serif;
+}
+
+* {
+  color: #2D2D32;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.inner {
+  max-width: 117rem;
+  margin: 0 auto;
+}
+
+section {
+  padding: 10rem 0;
+}
+
+.cmn-section {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #9F9EC1;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.cmn-title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #64629D;
+  margin-bottom: 2.9rem;
+  text-align: center;
+}
+
+.free-btn {
+  display: inline-block;
+  background-color: #64629D;
+  color: #fff;
+  padding: 1.2rem 2.6rem;
+  border-radius: 2rem;
+  font-size: 2rem;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+}
+
+.footer {
+  background-color: #000;
+  padding: 2.7rem 0;
+}
+
+.footer .footer-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer-contents .footer-left .footer-logo {
+  font-size: 2.4rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer .footer-contents .footer-left .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.footer .footer-contents .footer-left .nav-list .nav-item {
+  font-size: 1.4rem;
+  margin-right: 1.5rem;
+}
+
+.footer .footer-contents .footer-left .nav-list .nav-item a {
+  color: #fff;
+}
+
+.footer .footer-contents .footer-left small {
+  color: #fff;
+}
+
+.footer .footer-contents .footer-left small span {
+  color: #fff;
+  padding-left: 1rem;
+}
+
+.footer .footer-contents .footer-right .sns-text {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer .footer-contents .footer-right .sns-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-contents .footer-right .sns-list .sns-item {
+  margin-right: 1.5rem;
+}
+
+.footer .footer-contents .footer-right .sns-list .sns-item a i {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.header {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 7.2rem;
+  line-height: 7.2rem;
+}
+
+.header .header-logo {
+  font-size: 2.8rem;
+  color: #64629D;
+  font-weight: 900;
+}
+
+.header .header-nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header-nav .nav-list .nav-item {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 1.6rem;
+}
+
+.header .header-nav .nav-list .nav-free-btn a {
+  background-color: #64629D;
+  color: #fff;
+  padding: 1.2rem 2.6rem;
+  border-radius: 2rem;
+}
+
+.top {
+  background-color: #EDECFC;
+}
+
+.top .top-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top .top-contents .top-texts {
+  width: 60%;
+}
+
+.top .top-contents .top-texts .top-heading {
+  font-size: 6rem;
+  font-weight: 700;
+  margin-top: 11.7rem;
+}
+
+.top .top-contents .top-texts .top-explanation {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  margin: 2.4rem 0 4rem 0;
+}
+
+.top .top-contents .top-texts .free-btn {
+  display: inline-block;
+  margin-right: 3.7rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: #64629D;
+  color: #fff;
+  padding: 1.2rem 2.6rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+}
+
+.top .top-contents .top-texts .download {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: #fff;
+  color: #64629D;
+  padding: 1.2rem 2.6rem;
+  border: 2.5px solid #64629D;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+}
+
+.top .top-contents .top-image img {
+  width: 51.5rem;
+}
+
+.whatis {
+  background-color: #fff;
+  text-align: center;
+}
+
+.whatis .whatis-contents .whatis-explanation {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 3.5rem;
+}
+
+.whatis .whatis-contents .whatis-explanation span {
+  font-weight: 700;
+}
+
+.feature {
+  background-color: #F9F9F9;
+}
+
+.feature .feature-contents .feature-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.feature .feature-contents .feature-list .feature-texts {
+  width: 52%;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 4rem;
+  margin-top: 20rem;
+}
+
+.feature .feature-contents .feature-list .feature-texts .texts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature .feature-contents .feature-list .feature-texts .texts-list .texts-item .number {
+  font-size: 7.2rem;
+  font-weight: 700;
+  color: #64629D;
+}
+
+.feature .feature-contents .feature-list .feature-texts .texts-list .texts-item .texts-heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #2D2D32;
+}
+
+.feature .feature-contents .feature-list .feature-texts .texts-list .texts-item .texts-explanation {
+  margin-top: 1.7rem;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.feature .feature-contents .feature-list .feature-texts .texts-list .texts-item:last-child {
+  width: 72%;
+  margin-left: 1.8rem;
+}
+
+.feature .feature-contents .feature-list .feature-image {
+  width: 41%;
+  margin-top: 3rem;
+}
+
+.try {
+  text-align: center;
+  background-color: #2D2D32;
+  padding: 6rem 0;
+}
+
+.try .try-contents .try-texts {
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.users .users-contents .users-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.users .users-contents .users-list .users-item {
+  width: 25%;
+  text-align: center;
+}
+
+.users .users-contents .users-list .users-item img {
+  width: 21rem;
+}
+
+.users .users-contents .users-list .users-item:nth-child(n+5) {
+  margin-top: 5rem;
+}
+
+.flow {
+  background-color: #F9F9F9;
+}
+
+.flow .flow-contents .flow-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.flow .flow-contents .flow-list .flow-item {
+  width: 27%;
+  text-align: center;
+  position: relative;
+}
+
+.flow .flow-contents .flow-list .flow-item .number {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #64629D;
+  text-align: left;
+  position: absolute;
+  top: -2.5rem;
+  left: -1.5rem;
+}
+
+.flow .flow-contents .flow-list .flow-item .item-image {
+  background-color: #EDECFC;
+  border-radius: 2rem;
+}
+
+.flow .flow-contents .flow-list .flow-item .item-image img {
+  width: 70%;
+}
+
+.flow .flow-contents .flow-list .flow-item .item-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-top: 1.1rem;
+}
+
+.flow .flow-contents .flow-list .flow-item .item-texts {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.9rem;
+  margin-top: 0.8rem;
+  text-align: left;
+}
+
+.price .price-contents table {
+  width: 100%;
+  margin: 0 auto;
+  border-spacing: 0;
+}
+
+.price .price-contents table tr:nth-child(n+2):nth-last-child(n+2) {
+  height: 6rem;
+  line-height: 6rem;
+}
+
+.price .price-contents table tr:nth-child(n+2):nth-last-child(n+2) td:first-child {
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.price .price-contents table tr:nth-child(n+2):nth-last-child(n+2) td:nth-child(3) {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.price .price-contents table tr:nth-child(even) {
+  background-color: #EDECFC;
+}
+
+.price .price-contents table tr th:nth-child(even) {
+  background-color: #2D2D32;
+}
+
+.price .price-contents table tr th:nth-child(even) .price-free-btn {
+  color: #2D2D32;
+  background-color: #fff;
+}
+
+.price .price-contents table tr th:nth-child(3) {
+  background-color: #64629D;
+}
+
+.price .price-contents table tr th:nth-child(3) .price-free-btn {
+  border: 2px solid #fff;
+  background-color: #64629D;
+  color: #fff;
+}
+
+.price .price-contents table tr .type {
+  font-size: 2.4rem;
+  margin: 4rem 0 1.7rem 0;
+  color: #fff;
+}
+
+.price .price-contents table tr .money {
+  font-size: 1.8rem;
+  margin-bottom: 2.8rem;
+  color: #fff;
+}
+
+.price .price-contents table tr .money span {
+  font-size: 3.6rem;
+  color: #fff;
+}
+
+.price .price-contents table tr .price-free-btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 1.2rem 4.5rem;
+  border-radius: 2rem;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.price .price-contents table td {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.price .price-contents table:last-child td {
+  padding-top: 1.5rem;
+}
+
+.price .price-contents table:last-child td:nth-child(even) .price-free-btn {
+  color: #2D2D32;
+  background-color: #fff;
+  border: 2px solid #2D2D32;
+  margin-bottom: 0;
+}
+
+.price .price-contents table:last-child td:nth-child(3) .price-free-btn {
+  color: #fff;
+  background-color: #64629D;
+  border: 2px solid #2D2D32;
+  margin-bottom: 0;
+}
+
+.question {
+  background-color: #F9F9F9;
+}
+
+.question .question-contents .question-list .question-item {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.question .question-contents .question-list .question-item .faq {
+  background-color: #64629D;
+  color: #fff;
+  padding: 2.2rem 0 2.2rem 3rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.question .question-contents .question-list .question-item .faq span {
+  color: #fff;
+  padding-right: 0.8rem;
+  font-size: 2.2rem;
+}
+
+.question .question-contents .question-list .question-item .answer {
+  background-color: #fff;
+  line-height: 3.2rem;
+  padding: 2.2rem 2.2rem 2.2rem 3rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.question .question-contents .question-list .question-item .answer span:first-child {
+  margin-right: 1.5rem;
+  font-size: 2.2rem;
+}
+/*# sourceMappingURL=style.css.map */

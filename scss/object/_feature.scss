@@ -1,0 +1,47 @@
+.feature {
+  background-color: cl(gray);
+  .feature-contents {
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      .feature-item {
+      
+      }
+      .feature-texts {
+        width: 52%;
+        background-color: cl(white);
+        border-radius: 2rem;
+        padding: 4rem;
+        margin-top: 20rem;
+        .texts-list {
+          display: flex;
+          .texts-item {
+            .number {
+              font-size: 7.2rem;
+              font-weight: 700;
+              color: cl(purple);
+            }
+            .texts-heading {
+              font-size: 3.2rem;
+              font-weight: 700;
+              color: cl(try-black);
+            }
+            .texts-explanation {
+              margin-top: 1.7rem;
+              font-size: 1.6rem;
+              line-height: 2.8rem;
+            }
+            &:last-child {
+              width: 72%;
+              margin-left: 1.8rem;
+            }
+          }
+        }
+      }
+      .feature-image {
+        width: 41%;
+        margin-top: 3rem;
+      }
+    }
+  }
+}
