@@ -15,18 +15,20 @@
 </head>
 <body>
   <!-- header -->
-  <header class="header inner">
-    <div class="header-logo">Ravek</div>
-    <nav class="header-nav">
-      <ul class="nav-list">
-        <li class="nav-item">特長</li>
-        <li class="nav-item">導入実績</li>
-        <li class="nav-item">導入までの流れ</li>
-        <li class="nav-item">料金プラン</li>
-        <li class="nav-item">よくある質問</li>
-        <li class="nav-item nav-free-btn"><a href="#">無料で使ってみる</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="inner header-contents">
+      <div class="header-logo"><a href="#">Ravek</a></div>
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#feature">特長<a></li>
+          <li class="nav-item"><a href="#users">導入実績</a></li>
+          <li class="nav-item"><a href="#flow">導入までの流れ</a></li>
+          <li class="nav-item"><a href="#price">料金プラン</a></li>
+          <li class="nav-item"><a href="#question">よくある質問</a></li>
+          <li class="nav-item nav-free-btn"><a href="#">無料で使ってみる</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- top -->
@@ -35,12 +37,16 @@
       <div class="top-texts">
         <h1 class="top-heading">タスク管理は<br>
         時間をかけず、高速に。</h1>
-        <p class="top-explanation">Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を<br>簡単かつ高速にし、生産性を向上させるツールです。</p>
+        <p class="top-explanation">Ravek（レイベック）は複数人のプロジェクトにおけるタスク管理を<br class="pc-br">簡単かつ高速にし、生産性を向上させるツールです。</p>
         <a class="free-btn" href="#">まずは無料で使ってみる</a>
         <a class="download" href="#">資料をダウンロードする</a>
       </div>
       <div class="top-image">
         <img src="./img/At work-amico.svg" alt="デスクワーク">
+      </div>
+      <div class="top-btn">
+        <a class="free-btn" href="#">まずは無料で使ってみる</a>
+        <a class="download" href="#">資料をダウンロードする</a>
       </div>
     </div>
   </section>
@@ -49,8 +55,8 @@
   <section class="whatis">
     <div class="whatis-contents inner">
       <p class="cmn-section">What is Ravek?</p>
-      <h2 class="cmn-title">タスク管理の時間を削減するツール</h2>
-      <p class="whatis-explanation">Ravek（レイベック）は、<span>複数人が関わるプロジェクトでのタスク管理を簡単かつ高速にするツール</span>です。</p>
+      <h2 class="cmn-title">タスク管理の時間を<br class="sp-br">削減するツール</h2>
+      <p class="whatis-explanation">Ravek（レイベック）は、<br class="sp-br"><span>複数人が関わるプロジェクトでのタスク管理<br class="sp-br">を簡単かつ高速にするツール</span>です。</p>
       <p class="whatis-explanation">タスクの登録や進捗管理の手間を減らし、わかりやすく見える化することで<br>
       タスク管理にかかる時間を極限まで減らし、本質的な業務に時間を使いましょう。</p>
       <a class="free-btn" href="#">無料でRavekを使ってみる</a>
@@ -58,13 +64,16 @@
   </section>
 
   <!-- feature -->
-  <section class="feature">
+  <section class="feature" id="feature">
     <div class="feature-contents inner">
       <p class="cmn-section">Feature</p>
       <h2 class="cmn-title">Ravekの3つの特長</h2>
       <ul class="feature-list">
-
-        <li class="feature-item feature-texts">
+        
+        <li class="feature-item feature-image" style="order: 2;">
+          <img src="./img/Dashboard-amico.svg" alt="ダッシュボード">
+        </li>
+        <li class="feature-item feature-texts" style="order: 1;">
           <ul class="texts-list">
             <li class="texts-item">
               <p class="number">01</p>
@@ -75,14 +84,11 @@
             </li>
           </ul>
         </li>
-        <li class="feature-item feature-image">
-          <img src="./img/Dashboard-amico.svg" alt="ダッシュボード">
-        </li>
 
-        <li class="feature-item feature-image">
+        <li class="feature-item feature-image" style="order: 3;">
           <img src="./img/Design tools-amico.svg" alt="ツール">
         </li>
-        <li class="feature-item feature-texts">
+        <li class="feature-item feature-texts" style="order: 4;">
           <ul class="texts-list">
             <li class="texts-item">
               <p class="number">02</p>
@@ -94,8 +100,11 @@
             </li>
           </ul>
         </li>
-
-        <li class="feature-item feature-texts">
+        
+        <li class="feature-item feature-image" style="order: 6;">
+          <img src="./img/Online world-amico.svg" alt="オンライン">
+        </li>
+        <li class="feature-item feature-texts" style="order: 5;">
           <ul class="texts-list">
             <li class="texts-item">
               <p class="number">03</p>
@@ -106,10 +115,6 @@
             </li>
           </ul>
         </li>
-        <li class="feature-item feature-image">
-          <img src="./img/Online world-amico.svg" alt="オンライン">
-        </li>
-
 
       </ul>
     </div>
@@ -126,7 +131,7 @@
   </div>
 
   <!-- users -->
-  <section class="users">
+  <section class="users" id="users">
     <div class="users-contents inner">
       <p class="cmn-section">Users</p>
       <h2 class="cmn-title">導入実績</h2>
@@ -160,7 +165,7 @@
   </section>
 
   <!-- flow -->
-  <section class="flow">
+  <section class="flow" id="flow">
     <div class="flow-contents inner">
       <p class="cmn-section">Flow</p>
       <h2 class="cmn-title">導入までの流れ</h2>
@@ -173,6 +178,7 @@
           <h3 class="item-heading">無料トライアルを開始</h3>
           <p class="item-texts">まずはRavekの使用感をお試しください。最初の14日間は無料でご使用いただけます。</p>
         </li>
+        <span class="triangle"></span>
         <li class="flow-item">
           <p class="number">02</p>
           <div class="item-image">
@@ -181,6 +187,7 @@
           <h3 class="item-heading">本格導入をサポート</h3>
           <p class="item-texts">Ravekを気に入っていただけましたら、適したプランで導入ください。導入にお困りの際は、メール、またはチャットにてサポートいたします。</p>
         </li>
+        <span class="triangle"></span>
         <li class="flow-item">
           <p class="number">03</p>
           <div class="item-image">
@@ -204,89 +211,94 @@
   </div>
 
   <!-- price -->
-  <section class="price">
+  <section class="price" id="price">
     <div class="price-contents inner">
       <p class="cmn-section">Price</p>
       <h2 class="cmn-title">料金プラン</h2>
-      <table>
-        <tr>
-          <th></th>
-          <th>
-            <p class="type">ライト</p>
-            <p class="money">月額 <span>1,980 円</span></p>
-            <a class="price-free-btn" href="#">無料で使ってみる</a>
-          </th>
-          <th>
-            <p class="type">ベーシック</p>
-            <p class="money">月額 <span>2,980 円</span></p>
-            <a class="price-free-btn" href="#">無料で使ってみる</a>
-          </th>
-          <th>
-            <p class="type">プレミアム</p>
-            <p class="money">月額 <span>4,980 円</span></p>
-            <a class="price-free-btn" href="#">無料で使ってみる</a>
-          </th>
-        </tr>
-        <tr>
-          <td>プロジェクト数</td>
-          <td>5</td>
-          <td>15</td>
-          <td>15</td>
-        </tr>
-        <tr>
-          <td>メンバー数</td>
-          <td>10</td>
-          <td>30</td>
-          <td>30</td>
-        </tr>
-        <tr>
-          <td>ストレージ(容量)</td>
-          <td>25GB</td>
-          <td>50GB</td>
-          <td>100GB</td>
-        </tr>
-        <tr>
-          <td>2段階認証</td>
-          <td></td>
-          <td>〇</td>
-          <td>〇</td>
-        </tr>
-        <tr>
-          <td>2段階認証</td>
-          <td></td>
-          <td></td>
-          <td>〇</td>
-        </tr>
-        <tr>
-          <td>メールサポート</td>
-          <td>〇</td>
-          <td>〇</td>
-          <td>〇</td>
-        </tr>
-        <tr>
-          <td>チャットサポート</td>
-          <td>〇</td>
-          <td>〇</td>
-          <td>〇</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>
-            <a class="price-free-btn" href="#">無料で使ってみる</a>
-          </td>
-          <td>
-            <a class="price-free-btn" href="#">無料で使ってみる</a>
-          </td>
-          <td>
-            <a class="price-free-btn" href="#">無料で使ってみる</a>
-          </td>
-        </tr>
-      </table>
+      <div style="overflow-x:auto; padding-top: 2rem;">
+        <table>
+          <tr>
+            <th></th>
+            <th>
+              <p class="type">ライト</p>
+              <p class="money">月額 <span>1,980 円</span></p>
+              <a class="price-free-btn" href="#">無料で使ってみる</a>
+            </th>
+            <th>
+              <div class="th-inner">
+                <p class="type">ベーシック</p>
+                <p class="money">月額 <span>2,980 円</span></p>
+                <a class="price-free-btn" href="#">無料で使ってみる</a>
+              </div>
+            </th>
+            <th>
+              <p class="type">プレミアム</p>
+              <p class="money">月額 <span>4,980 円</span></p>
+              <a class="price-free-btn" href="#">無料で使ってみる</a>
+            </th>
+          </tr>
+          <tr>
+            <td>プロジェクト数</td>
+            <td>5</td>
+            <td>15</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>メンバー数</td>
+            <td>10</td>
+            <td>30</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>ストレージ(容量)</td>
+            <td>25GB</td>
+            <td>50GB</td>
+            <td>100GB</td>
+          </tr>
+          <tr>
+            <td>2段階認証</td>
+            <td></td>
+            <td>〇</td>
+            <td>〇</td>
+          </tr>
+          <tr>
+            <td>2段階認証</td>
+            <td></td>
+            <td></td>
+            <td>〇</td>
+          </tr>
+          <tr>
+            <td>メールサポート</td>
+            <td>〇</td>
+            <td>〇</td>
+            <td>〇</td>
+          </tr>
+          <tr>
+            <td>チャットサポート</td>
+            <td>〇</td>
+            <td>〇</td>
+            <td>〇</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <a class="price-free-btn" href="#">無料で使ってみる</a>
+            </td>
+            <td>
+              <a class="price-free-btn" href="#">無料で使ってみる</a>
+            </td>
+            <td>
+              <a class="price-free-btn" href="#">無料で使ってみる</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      
     </div>
   </section>
 
   <!-- question -->
-  <section class="question">
+  <section class="question" id="question">
     <div class="question-contents inner">
       <p class="cmn-section">Question</p>
       <h2 class="cmn-title">よくある質問</h2>
@@ -294,7 +306,7 @@
         <li class="question-item">
           <p class="faq">
             <span>Q</span>
-            Ravekはユーザー1人あたりの課金制なのですか？
+            <span>Ravekはユーザー1人あたりの課金制なのですか？</span>
           </p>
           <p class="answer">
             <span>A</span>
@@ -307,7 +319,7 @@
         <li class="question-item">
           <p class="faq">
             <span>Q</span>
-            Ravekはユーザー1人あたりの課金制なのですか？
+            <span>Ravekはユーザー1人あたりの課金制なのですか？</span>
           </p>
           <p class="answer">
             <span>A</span>
@@ -320,7 +332,7 @@
         <li class="question-item">
           <p class="faq">
             <span>Q</span>
-            Ravekはユーザー1人あたりの課金制なのですか？
+            <span>Ravekはユーザー1人あたりの課金制なのですか？</span>
           </p>
           <p class="answer">
             <span>A</span>
@@ -333,7 +345,7 @@
         <li class="question-item">
           <p class="faq">
             <span>Q</span>
-            Ravekはユーザー1人あたりの課金制なのですか？
+            <span>Ravekはユーザー1人あたりの課金制なのですか？</span>
           </p>
           <p class="answer">
             <span>A</span>
@@ -360,18 +372,6 @@
   <!-- footer -->
   <footer class="footer">
     <div class="footer-contents inner">
-      <div class="footer-left">
-        <div class="footer-logo">Ravek</div>
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#">会社概要</a></li>
-          <li class="nav-item"><a href="#">プライバシーポリシー</a></li>
-          <li class="nav-item"><a href="#">利用規約</a></li>
-          <li class="nav-item"><a href="#">お問い合わせ</a></li>
-        </ul>
-        <small>© Ravek Inc. 2021
-          <span>Illustration by FreepikStoryset</span>
-        </small>
-      </div>
       <div class="footer-right">
         <div class="sns-text">Share on SNS</div>
         <ul class="sns-list">
@@ -384,13 +384,25 @@
             <a href="#">
               <i class="fab fa-instagram"></i>
             </a>
-            </li>
+          </li>
           <li class="sns-item">
             <a href="#">
               <i class="fab fa-facebook"></i>
             </a>
           </li>
         </ul>
+      </div>
+      <div class="footer-left">
+        <div class="footer-logo">Ravek</div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">会社概要</a></li>
+          <li class="nav-item"><a href="#">プライバシーポリシー</a></li>
+          <li class="nav-item"><a href="#">利用規約</a></li>
+          <li class="nav-item"><a href="#">お問い合わせ</a></li>
+        </ul>
+        <small>© Ravek Inc. 2021
+          <span>Illustration by FreepikStoryset</span>
+        </small>
       </div>
     </div>
   </footer>

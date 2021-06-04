@@ -2,19 +2,29 @@
   background-color: cl(gray);
   .feature-contents {
     .feature-list {
-      display: flex;
-      flex-wrap: wrap;
+      @include overTab {
+        display: flex;
+        flex-wrap: wrap;
+      }
       .feature-item {
       
       }
       .feature-texts {
-        width: 52%;
         background-color: cl(white);
         border-radius: 2rem;
-        padding: 4rem;
-        margin-top: 20rem;
+        padding: 2rem;
+        @include overTab {
+          width: 50%;
+          margin-top: 10rem;
+          @include overTablet {
+            padding: 4rem;
+            margin-top: 20rem;
+          }
+        }
         .texts-list {
-          display: flex;
+          @include overTab {
+            display: flex;
+          }
           .texts-item {
             .number {
               font-size: 7.2rem;
@@ -32,15 +42,21 @@
               line-height: 2.8rem;
             }
             &:last-child {
-              width: 72%;
-              margin-left: 1.8rem;
+              @include overTab {
+                width: 72%;
+                margin-left: 1.8rem;
+              }
             }
           }
         }
       }
       .feature-image {
-        width: 41%;
-        margin-top: 3rem;
+        width: 80%;
+        margin: 3rem auto 0;
+        @include overTab {
+          width: 41%;
+          margin: 3rem 0 0 0;
+        }
       }
     }
   }

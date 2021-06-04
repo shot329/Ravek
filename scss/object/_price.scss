@@ -1,24 +1,33 @@
 .price {
-
   .price-contents {
-
     table {
-      width: 100%;
-      margin: 0 auto;
+      width: 100rem;
       border-spacing: 0;
+      margin: 0 auto;
+      @include overTablet {
+        width: 100%;
+        margin: 5rem auto 0;
+      }
       tr {
         // ★ //
         &:nth-child(n+2):nth-last-child(n+2) {
-          height: 6rem;
-          line-height: 6rem;
+          height: 4.8rem;
+          line-height: 4.8rem;
+          @include overTab {
+            height: 6rem;
+            line-height: 6rem;
+          }
           td {
             &:first-child {
               padding-left: 2rem;
               text-align: left;
             }
             &:nth-child(3) {
-              font-size: 3rem;
+              font-size: 2.4rem;
               font-weight: 700;
+              @include overTab {
+                font-size: 3rem;
+              }
             }
           }
         }
@@ -38,28 +47,64 @@
           }
             // ベーシック
             &:nth-child(3) {
-              background-color: cl(purple);
-              .price-free-btn {
-                border: 2px solid cl(white);
+              position: relative;
+              .th-inner {
+                position: absolute;
+                width: 100%;
                 background-color: cl(purple);
-                color: cl(white);
+                top: -1.35rem;
+                @include overTab {
+                  top: -1.85rem;
+                }
+                .type {
+                  font-size: 2rem;
+                  @include overTab {
+                    font-size: 2.8rem;
+                  }
+                }
+                .money {
+                  font-size: 1.2rem;
+                  @include overTab {
+                    font-size: 2.4rem;
+                  }
+                  span {
+                    font-size: 3rem;
+                    @include overTab {
+                      font-size: 4.2rem;
+                    }
+                  }
+                }
+                .price-free-btn {
+                  border: 2px solid cl(white);
+                  background-color: cl(purple);
+                  color: cl(white);
+                }
               }
             }
         }
 
           // 共通
           .type {
-            font-size: 2.4rem;
+            font-size: 1.8rem;
             margin: 4rem 0 1.7rem 0;
             color: cl(white);
+            @include overTab {
+              font-size: 2.4rem;
+            }
           }
           .money {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             margin-bottom: 2.8rem;
             color: cl(white);
+            @include overTab {
+              font-size: 1.8rem;
+            }
             span {
-              font-size: 3.6rem;
+              font-size: 2.6rem;
               color: cl(white);
+              @include overTab {
+                font-size: 3.6rem;
+              }
             }
           }
           .price-free-btn {
@@ -73,20 +118,21 @@
       }
 
       td {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         text-align: center;
-        
+        @include overTab {
+          font-size: 2.2rem;
+        }
       }
 
-      &:last-child {
+      &:nth-last-child(1) {
         td {
-          padding-top: 1.5rem;
           &:nth-child(even) {
             .price-free-btn {
               color: cl(try-black);
               background-color: cl(white);
               border: 2px solid cl(try-black);
-              margin-bottom: 0;
+              margin: 1.5rem 0 0 0;
             }
           }
           &:nth-child(3) {
@@ -94,7 +140,7 @@
               color: cl(white);
               background-color: cl(purple);
               border: 2px solid cl(try-black);
-              margin-bottom: 0;
+              margin: 1.5rem 0 0 0;
             }
           }
         }
