@@ -2,8 +2,14 @@
   background-color: cl(black);
   padding: 2.7rem 0;
   .footer-contents {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    text-align: center;
+    @include overTab {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      text-align: left;
+    }
     .footer-left {
       .footer-logo {
         font-size: 2.4rem;
@@ -11,11 +17,16 @@
         margin-bottom: 1rem;
       }
       .nav-list {
-        display: flex;
         margin-bottom: 1rem;
+        @include overTab {
+          display: flex;
+        }
         .nav-item {
           font-size: 1.4rem;
-          margin-right: 1.5rem;
+          margin-bottom: 1rem;
+          @include overTab {
+            margin-right: 1.5rem;
+          }
           a {
             color: cl(white);
           }
@@ -31,6 +42,10 @@
     }
 
     .footer-right {
+      margin-bottom: 2rem;
+      @include overTab {
+        margin-bottom: 0;
+      }
       .sns-text {
         color: cl(white);
         font-size: 1.8rem;
@@ -38,8 +53,16 @@
       }
       .sns-list {
         display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 24%;
+        @include overTab {
+          width: 100%;
+        }
         .sns-item {
-          margin-right: 1.5rem;
+          @include overTab {
+            margin-right: 1.5rem;
+          }
           a {
             i {
               color: cl(white);

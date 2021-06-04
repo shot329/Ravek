@@ -10,14 +10,22 @@ $colors: (
 	purple3: #9F9EC1,
 	gray: #F9F9F9,
 	try-black: #2D2D32,
+	triangle: #C4C4C4,
+
 );
 
 @function cl($key) {
 	@return map-get($colors, $key);
 }
 
-@mixin responsive {
-	@media print,screen and (max-width: 768px) {
+@mixin overTab {
+	@media print,screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin overTablet {
+	@media print,screen and (min-width: 1000px) {
 		@content;
 	}
 }

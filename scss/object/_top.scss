@@ -1,47 +1,93 @@
 .top {
   background-color: cl(pale-purple);
   .top-contents {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    @include overTab {
+      display: flex;
+      flex-wrap: wrap;
+    }
     .top-texts {
-      width: 60%;
+      @include overTab {
+        width: 58%;
+      }
       .top-heading {
-        font-size: 6rem;
+        font-size: 3rem;
         font-weight: 700;
-        margin-top: 11.7rem;
+        margin-top: 2rem;
+        @include overTab {
+          font-size: 4rem;
+          @include overTablet {
+            font-size: 6rem;
+            margin-top: 11.7rem;
+          }
+        }
       }
       .top-explanation {
         font-size: 1.8rem;
         font-weight: 400;
         line-height: 3.2rem;
-        margin: 2.4rem 0 4rem 0;
+        margin: 2.4rem 0 0 0;
+      }
+      .free-btn,
+      .download {
+        display: none;
+        @include overTab {
+          display: inline-block;
+          margin: 3rem 0 0 0;
+        }
       }
       .free-btn {
-        display: inline-block;
-        margin-right: 3.7rem;
-        font-size: 1.8rem;
-        font-weight: 700;
-        background-color: cl(purple);
-        color: cl(white);
-        padding: 1.2rem 2.6rem;
-        border-radius: 2rem;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
-      }
-      .download {
-        font-size: 1.8rem;
-        font-weight: 700;
-        background-color: cl(white);
-        color: cl(purple);
-        padding: 1.2rem 2.6rem;
-        border: 2.5px solid cl(purple);
-        border-radius: 2rem;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+        margin: 3rem 3rem 0 0;
       }
     }
     .top-image {
-      img {
-        width: 51.5rem;
+      @include overTab {
+        width: 40%;
       }
     }
+    .top-btn {
+      display: flex;
+      flex-wrap: wrap;
+      @include overTab {
+        display: none;
+      }
+      .free-btn,
+      .download {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .download {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+.tablet-br {
+  display: none;
+  @include overTab {
+    display: block;
+    @include overTablet {
+      display: none;
+    }
+  }
+}
+
+.download {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: cl(white);
+  color: cl(purple);
+  padding: 1.2rem 2.6rem;
+  border: 2.5px solid cl(purple);
+  border-radius: 2rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+}
+
+
+@include overTab {
+  @include overTablet {
+
   }
 }
