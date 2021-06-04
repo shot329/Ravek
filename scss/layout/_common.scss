@@ -43,6 +43,7 @@ section {
   }
 }
 
+// PCのみ表示（改行）
 .pc-br {
   display: none;
   @include overTab {
@@ -50,6 +51,7 @@ section {
   }
 }
 
+// スマホのみ表示（改行）
 .sp-br {
   display: block;
   @include overTab {
